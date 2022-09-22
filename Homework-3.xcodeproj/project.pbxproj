@@ -24,6 +24,9 @@
 		D3B736AD28D9241B0008FD10 /* ToDoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3B736AB28D9241B0008FD10 /* ToDoTableViewCell.xib */; };
 		D3B736B128D926AC0008FD10 /* DetailToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B736B028D926AC0008FD10 /* DetailToDoViewController.swift */; };
 		D3B736B328D926D10008FD10 /* AddToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B736B228D926D10008FD10 /* AddToDoViewController.swift */; };
+		D3B736B628D9319F0008FD10 /* PostsPageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B736B528D9319F0008FD10 /* PostsPageEntity.swift */; };
+		D3B736B828D933200008FD10 /* PostsPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B736B728D933200008FD10 /* PostsPageViewModel.swift */; };
+		D3B736BC28DCDE790008FD10 /* PostsPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B736BB28DCDE790008FD10 /* PostsPageModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,9 @@
 		D3B736AB28D9241B0008FD10 /* ToDoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoTableViewCell.xib; sourceTree = "<group>"; };
 		D3B736B028D926AC0008FD10 /* DetailToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailToDoViewController.swift; sourceTree = "<group>"; };
 		D3B736B228D926D10008FD10 /* AddToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoViewController.swift; sourceTree = "<group>"; };
+		D3B736B528D9319F0008FD10 /* PostsPageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsPageEntity.swift; sourceTree = "<group>"; };
+		D3B736B728D933200008FD10 /* PostsPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsPageViewModel.swift; sourceTree = "<group>"; };
+		D3B736BB28DCDE790008FD10 /* PostsPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsPageModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				D3B7369028D90CB10008FD10 /* App Files */,
+				D3B736B428D931870008FD10 /* Entity */,
 				D3B7369128D90CC30008FD10 /* Screens */,
-				D3B7369528D90DE10008FD10 /* Network */,
 				D3B7369628D90DE90008FD10 /* Assets */,
 				D3B7368228D90A0C0008FD10 /* Main.storyboard */,
 				D3B7368728D90A0F0008FD10 /* LaunchScreen.storyboard */,
@@ -128,6 +134,8 @@
 			children = (
 				D3B7369B28D912140008FD10 /* Cell */,
 				D3B7368028D90A0C0008FD10 /* PostsPageViewController.swift */,
+				D3B736B728D933200008FD10 /* PostsPageViewModel.swift */,
+				D3B736BB28DCDE790008FD10 /* PostsPageModel.swift */,
 			);
 			path = "Posts Page";
 			sourceTree = "<group>";
@@ -148,13 +156,6 @@
 				D3B7369928D90EDD0008FD10 /* ToDoViewController.swift */,
 			);
 			path = ToDoPage;
-			sourceTree = "<group>";
-		};
-		D3B7369528D90DE10008FD10 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
 			sourceTree = "<group>";
 		};
 		D3B7369628D90DE90008FD10 /* Assets */ = {
@@ -208,13 +209,20 @@
 			path = AddToDoPage;
 			sourceTree = "<group>";
 		};
+		D3B736B428D931870008FD10 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				D3B736B528D9319F0008FD10 /* PostsPageEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		DD246220B31F79ACF367E1C2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				BFE8F5EE629B3A8F962EB81D /* Pods-Homework-3.debug.xcconfig */,
 				BA69C5979AEA8803BBEDF2F5 /* Pods-Homework-3.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -339,13 +347,16 @@
 				D3B7369A28D90EDD0008FD10 /* ToDoViewController.swift in Sources */,
 				D3B736B128D926AC0008FD10 /* DetailToDoViewController.swift in Sources */,
 				D3B736B328D926D10008FD10 /* AddToDoViewController.swift in Sources */,
+				D3B736BC28DCDE790008FD10 /* PostsPageModel.swift in Sources */,
 				D3B7368128D90A0C0008FD10 /* PostsPageViewController.swift in Sources */,
 				D3B7369828D90EA60008FD10 /* PhotosViewController.swift in Sources */,
 				D3B736AC28D9241B0008FD10 /* ToDoTableViewCell.swift in Sources */,
 				D3B7367D28D90A0C0008FD10 /* AppDelegate.swift in Sources */,
 				D3B736A728D921350008FD10 /* PhotoCollectionViewCell.swift in Sources */,
 				D3B7367F28D90A0C0008FD10 /* SceneDelegate.swift in Sources */,
+				D3B736B828D933200008FD10 /* PostsPageViewModel.swift in Sources */,
 				D3B7369E28D9126A0008FD10 /* PostTableViewCell.swift in Sources */,
+				D3B736B628D9319F0008FD10 /* PostsPageEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
