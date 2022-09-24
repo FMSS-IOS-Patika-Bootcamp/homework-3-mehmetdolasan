@@ -10,13 +10,11 @@ import Foundation
 protocol PostsPageViewModelViewProtocol: AnyObject {
   
   func didCellItemFetch(_ items: [PostsCellViewModel])
-  func showEmptyView()
-  func hideEmptyView()
 }
 
 class PostsPageViewModel {
   
-  private let model = PostsPageModel()
+  private let model = PostsPageModel()  // model = PostListModel()
   
   weak var viewDelegate: PostsPageViewModelViewProtocol?
   
@@ -28,13 +26,23 @@ class PostsPageViewModel {
     model.fetchData()
   }
   
-  func didClickItem(at index: Int){
-    let selectedItem = model.posts[index]
-    // TODO: Navigate
-    
-  }
+//  func numberOfItems() -> Int {
+//    //sayı değişikliği burda yapılacak
+//    return model.posts.count
+//  }
+//
+//  func numberOfSections() -> Int {
+//    return 1
+//  }
+//  func getModel(at index: Int) -> PostsCellViewModel {
+//    return transformPostToCellModel(model.posts[index])
+//  }
+//  func transformPostToCellModel(_ post: Post) -> PostsCellViewModel {
+//    return .init(title: post.title, desc: post.body)
+//  }
 }
 
+//burası silinecek
 private extension PostsPageViewModel {
   
   @discardableResult
@@ -42,16 +50,13 @@ private extension PostsPageViewModel {
     return posts.map{ .init(title: $0.title, desc: $0.body) }
   }
 }
-
+//
 extension PostsPageViewModel: PostsPageModelProtocol {
   func didDataFetchProcessFinish(_ isSuccses: Bool) {
     if isSuccses {
       let posts = model.posts
       let cellModels = makeViewBasedModel(posts)
       viewDelegate?.didCellItemFetch(cellModels)
-      viewDelegate?.hideEmptyView()
-    } else {
-      viewDelegate?.showEmptyView()
     }
   }
 }

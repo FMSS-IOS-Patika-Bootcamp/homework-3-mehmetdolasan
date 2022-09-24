@@ -24,10 +24,8 @@ class PostsPageViewController: UIViewController {
   
   private func prepareTableView(){
     tableView.dataSource = self
-    tableView.delegate = self
     tableView.register(UINib(nibName: String(describing: PostTableViewCell.self), bundle: nil), forCellReuseIdentifier: "PostTableViewCell")
   }
-  
 }
 
 extension PostsPageViewController: PostsPageViewModelViewProtocol {
@@ -37,21 +35,6 @@ extension PostsPageViewController: PostsPageViewModelViewProtocol {
     DispatchQueue.main.async {
       self.tableView.reloadData()
     }
-  }
-  
-  func showEmptyView() {
-    // TODO:
-  }
-  
-  func hideEmptyView() {
-    // TODO:
-  }
-  
-}
-
-extension PostsPageViewController: UITableViewDelegate {
-  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    viewModel.didClickItem(at: indexPath.row)
   }
 }
 
