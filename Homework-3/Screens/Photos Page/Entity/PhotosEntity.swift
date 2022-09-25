@@ -8,6 +8,7 @@
 import Foundation
 
 struct PhotosCellViewModel {
+  //gelen verilerde sadece imageUrl kullanılacağı için sadece imageUrl içeren struct oluşturuldu
   var imageUrl: String?
 }
 

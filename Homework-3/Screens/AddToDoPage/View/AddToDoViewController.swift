@@ -15,7 +15,6 @@ class AddToDoViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    //deleteAll(entity: "ToDo")
   }
   
   @IBAction func addTaskButtonTapped(_ sender: Any) {
@@ -30,15 +29,4 @@ class AddToDoViewController: UIViewController {
     AppDelegate.sharedAppDelegate.coreDataStack.saveContext()
     navigationController?.popToRootViewController(animated: true)
   }
-  
-//  func deleteAll(entity: String) {
-//    let deleteFetch = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
-//    let deleteRequest = NSBatchDeleteRequest(fetchRequest: deleteFetch)
-//    do {
-//      try AppDelegate.sharedAppDelegate.coreDataStack.managedContext.execute(deleteRequest)
-//      try AppDelegate.sharedAppDelegate.coreDataStack.managedContext.save()
-//    } catch  {
-//      print("There was an error")
-//    }
-//  }
 }

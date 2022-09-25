@@ -66,6 +66,7 @@ extension ToDoViewController: UITableViewDataSource {
 
 extension ToDoViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
     let destVC = self.storyboard?.instantiateViewController(withIdentifier: "DetailToDoViewController") as! DetailToDoViewController
     
     destVC.todo = todos[indexPath.row]

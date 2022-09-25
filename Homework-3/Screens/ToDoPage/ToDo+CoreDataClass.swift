@@ -13,8 +13,3 @@ import CoreData
 public class ToDo: NSManagedObject {
   
 }
-
-//struct ToDoCellViewModel {
-//  var content: String?
-//  var status: Bool?
-//}

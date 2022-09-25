@@ -38,8 +38,6 @@
 		D3B736E628DF57720008FD10 /* ToDo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B736E428DF57720008FD10 /* ToDo+CoreDataProperties.swift */; };
 		D3B736EB28DF9DAC0008FD10 /* DetailToDoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B736EA28DF9DAC0008FD10 /* DetailToDoViewModel.swift */; };
 		D3B736ED28DF9DBD0008FD10 /* DetailToDoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B736EC28DF9DBD0008FD10 /* DetailToDoModel.swift */; };
-		D3B736F228DF9DFA0008FD10 /* AddToDoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B736F128DF9DFA0008FD10 /* AddToDoViewModel.swift */; };
-		D3B736F428DF9E0C0008FD10 /* AddToDoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B736F328DF9E0C0008FD10 /* AddToDoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,8 +76,6 @@
 		D3B736E428DF57720008FD10 /* ToDo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ToDo+CoreDataProperties.swift"; path = "Homework-3/Screens/ToDoPage/ToDo+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		D3B736EA28DF9DAC0008FD10 /* DetailToDoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailToDoViewModel.swift; sourceTree = "<group>"; };
 		D3B736EC28DF9DBD0008FD10 /* DetailToDoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailToDoModel.swift; sourceTree = "<group>"; };
-		D3B736F128DF9DFA0008FD10 /* AddToDoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoViewModel.swift; sourceTree = "<group>"; };
-		D3B736F328DF9E0C0008FD10 /* AddToDoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,8 +235,6 @@
 			isa = PBXGroup;
 			children = (
 				D3B736F028DF9DDD0008FD10 /* View */,
-				D3B736EF28DF9DD50008FD10 /* ViewModel */,
-				D3B736EE28DF9DCF0008FD10 /* Model */,
 			);
 			path = AddToDoPage;
 			sourceTree = "<group>";
@@ -366,22 +360,6 @@
 				D3B736B028D926AC0008FD10 /* DetailToDoViewController.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		D3B736EE28DF9DCF0008FD10 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				D3B736F328DF9E0C0008FD10 /* AddToDoModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		D3B736EF28DF9DD50008FD10 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				D3B736F128DF9DFA0008FD10 /* AddToDoViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		D3B736F028DF9DDD0008FD10 /* View */ = {
@@ -537,8 +515,6 @@
 				D3B736EB28DF9DAC0008FD10 /* DetailToDoViewModel.swift in Sources */,
 				D3B736C028DE49960008FD10 /* PhotosModel.swift in Sources */,
 				D3B736D628DF4F400008FD10 /* CoreDataStack.swift in Sources */,
-				D3B736F428DF9E0C0008FD10 /* AddToDoModel.swift in Sources */,
-				D3B736F228DF9DFA0008FD10 /* AddToDoViewModel.swift in Sources */,
 				D3B736ED28DF9DBD0008FD10 /* DetailToDoModel.swift in Sources */,
 				D3B736B828D933200008FD10 /* PostsPageViewModel.swift in Sources */,
 				D3B7369E28D9126A0008FD10 /* PostTableViewCell.swift in Sources */,

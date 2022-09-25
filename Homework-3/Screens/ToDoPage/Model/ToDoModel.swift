@@ -19,11 +19,12 @@ class ToDoModel {
   var toDos: [ToDo] = []
   
   func fetchData() {
-    
+    //verilerin coreData'dan çekilmesi
     let fetchRequest: NSFetchRequest<ToDo> = ToDo.fetchRequest()
     do {
       let context = AppDelegate.sharedAppDelegate.coreDataStack.managedContext
       var results = try context.fetch(fetchRequest)
+      //eklenen yeni todo'nun en başta gözükmesi için yapılan işlem
       results.reverse()
       self.toDos = results
       print(results)

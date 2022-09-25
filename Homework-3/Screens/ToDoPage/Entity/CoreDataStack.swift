@@ -8,6 +8,7 @@
 import CoreData
 import Foundation
 
+//CoreData işlemleri için oluşturulan sınıf
 class CoreDataStack {
   
   private let modelName: String

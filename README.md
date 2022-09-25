@@ -1,17 +1,31 @@
-# HomWork-3
-3. Ödevimiz
+# FMSS-Homework-3
 
+## Özet
 
-- Tab bar Controller olcak. En az 3 tane Tab olucak. 
-- İlk Tab'de TableView olucak ve bu TableView içerisinde https://jsonplaceholder.typicode.com/ linkindeki post'lar api kullanarak cekilip gösterilicek. ( SADECE URLSESSİON KULLANILICAKTIR.)
-- İkinci Tab'de CollectionView kullanılıcaktır.  https://jsonplaceholder.typicode.com/ linkindeki /photos'lar api kullanarak cekilip gösterilicek.
-- İmageler sadece KingsFisher kütüphanesi kullanılıar gösterilicektir. Başka kütüphane kabul edilmicektir. 
-- Cell yapısı kullanılar collectionView da gösterilicektir.
-- Grit yapısı oluşturularak CollectionView lar gösterilicektir. Aralarında boşluk birakilarak yapılırsa artı puan verilicek
-- Üçüncü tab'de Todo list gösterilicektir. Burdaki listeler CoreData dan alınıcaktır. Bu tab'de bir tane ekle butonu olucaktır.
-- Ekle butonuna basınca Yeni bir sayfaya geçiş yapılıcak ve bu sayfa Todo kaydedilicektir. Kayıt yapıldıktan sonra Todo list ekranına dönüş yapılmalıdır.
-- Yeni eklenen Todo Listenin en başında Gözükmelidir.
-- Todo'ların üstüne tıklanınca Detay sayfasına gidilicek, Bu sayfada Tamamlandı butonu olucak ve bu Butona tıklandığında Todo List sayfasına geri dönüş yapılıcaktır.
-- Tamamlandı butonuna basıldığı zaman, Todo List ekranında ilgili Todo Cellindeki image tick şaretine dönüşücektir.
+- Birinci Tab'de bir API'den gelen veriler gösterilir. 
+- İkinci Tab'de bir API'den gelen görseller gösterilir.
+- Üçüncü Tad'de ise bir ToDo uygulaması bulunur.
+    - ToDo Tab'inde navigasyon butonu bulunur. Bu butona tıklandığında todo ekleme sayfası açılır.
+    - ToDo Tab'inde seçilen her todo için detay todo sayfası açılır.
+---
 
- Arkadaşlar kolay gelsin :)
+<div>
+    <div style="text-align: left" >
+    <img src="images/1.png" width="300"></img><img src="images/2.png" width="300"></img>
+</div>
+
+<div>
+    <div style="text-align: left" >
+    <img src="images/3.png" width="300"></img><img src="images/4.png" width="300"></img>
+</div>
+
+---
+
+## Tools
+- Swift
+    - MVVM Design Pattern
+    - Kingfisher
+    - UrlSession
+- UIKit
+    - TabBar 
+    - Navigation Controller 

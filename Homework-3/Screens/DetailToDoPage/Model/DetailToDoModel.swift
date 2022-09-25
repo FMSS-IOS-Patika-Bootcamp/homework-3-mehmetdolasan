@@ -19,8 +19,17 @@ class DetailToDoModel {
   
   func fetchData() {
     
-    
+    if let status = todo?.status {
+      if !status {
+        print("false")
+        todo?.status = true
+        AppDelegate.sharedAppDelegate.coreDataStack.saveContext()
+      } else {
+        print("true")
+        todo?.status = false
+        AppDelegate.sharedAppDelegate.coreDataStack.saveContext()
+      }
+    }
     
   }
-  
 }

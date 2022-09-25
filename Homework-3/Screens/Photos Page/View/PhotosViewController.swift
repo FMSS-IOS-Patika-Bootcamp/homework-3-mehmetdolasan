@@ -36,6 +36,7 @@ extension PhotosViewController: PhotosViewModelViewProtocol {
   func didCellItemFetch(_ photos: [PhotosCellViewModel]) {
     self.photos = photos
     self.tempPhotos = [PhotosCellViewModel]()
+    //çok fazla veri gelmesini önlemek için belli sayıda fotoğrafın gösterildiği fonk.
     var i = 0
     while i < 30 {
       tempPhotos.append(photos[i])
@@ -58,6 +59,7 @@ extension PhotosViewController: UICollectionViewDataSource {
     
     if let urlString = tempPhotos[indexPath.row].imageUrl {
       if let imageUrl = URL(string: urlString ) {
+        //Gelen url ile kingfisher kullanarak image ın çekilmesi
         cell.imageView.kf.setImage(with: imageUrl)
       }
     }
@@ -67,6 +69,7 @@ extension PhotosViewController: UICollectionViewDataSource {
 }
 
 extension PhotosViewController: UICollectionViewDelegateFlowLayout {
+  //her bir satırda kaç image gösterileceği hesaplandı
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
     .init(width: (collectionView.frame.width - 32)/3 , height: (collectionView.frame.height)/3)
   }
